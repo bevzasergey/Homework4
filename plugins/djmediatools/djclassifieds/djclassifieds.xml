@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.5" type="plugin" group="djmediatools" method="upgrade">
+	<name>plg_djmediatools_djclassifieds</name>
+	<creationDate>September 2012</creationDate>
+    <author>DJ-Extensions.com</author>
+	<copyright>Copyright (C) 2012 DJ-Extensions.com, All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses GNU/GPL</license>
+	<authorEmail>contact@dj-extensions.com</authorEmail>
+	<authorUrl>http://dj-extensions.com</authorUrl>
+	<version>1.1.0</version>
+	<description>plg_djmediatools_djclassifieds</description>
+	<files>
+		<filename plugin="djclassifieds">djclassifieds.php</filename>
+		<filename>index.html</filename>
+		<filename>icon.png</filename>
+		<folder>language</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+
+			<fieldset name="source_settings">
+				
+				<field name="plg_classifieds_catid" type="sql" default="0" query="SELECT id AS value, CONCAT('[',parent_id,'] ',name,' (id: ',id,')') AS plg_classifieds_catid FROM #__djcf_categories"
+					label="PLG_DJMEDIATOOLS_DJCLASSIFIEDS_CATEGORY" size="10">
+					<option value="0">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ALL_CATEGORIES</option>
+				</field>
+				
+				<field name="plg_classifieds_items_ord" type="list" default="0" label="PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ITEMS_ORDERING">
+					<option value="0">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ITEMS_MOST_RECENT</option>
+					<option value="1">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ITEMS_POPULAR</option>
+					<option value="2">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ITEMS_RANDOM</option>
+				</field>
+				<field name="plg_classifieds_only_promoted" type="list" default="0" multiple="true" size="6" label="PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ONLY_PROMOTED">
+					<option value="" disabled="true">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_MULTIPLE_DESC</option>
+					<option value="p_special">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ONLY_PROMOTED_SPECIAL</option>
+					<option value="p_first">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ONLY_PROMOTED_FIRST</option>
+					<option value="p_bold">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ONLY_PROMOTED_BOLD</option>
+					<option value="p_border">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ONLY_PROMOTED_BORDER</option>
+					<option value="p_bg">PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ONLY_PROMOTED_BG</option>
+				</field>
+				<field name="plg_classifieds_items_ids" type="text" default="" label="PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ITEMS_IDS" description="PLG_DJMEDIATOOLS_DJCLASSIFIEDS_ITEMS_IDS_DESC"  size="50" />
+				
+			</fieldset>
+
+		</fields>
+	</config>
+	
+</extension>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade">
+	<name>Календарь</name>
+	<author>Juan Padial</author>
+	<creationDate>2012</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joomlacalendar@ya.ru</authorEmail>
+	<authorUrl>http://joomlacalendar.ru/</authorUrl>
+	<version>1.6.5a</version>
+	<description>
+	<![CDATA[<p>Календарь, который отображает новости на сайте по определенным дням. 
+	</p>]]></description>
+	<files>
+		<filename module="mod_blog_calendar">mod_blog_calendar.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>calendarClass.php</filename>
+		<folder>js</folder>
+		<folder>img</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+      <config>
+       <fields name="params">
+        <fieldset name="basic">
+		 <field name="show_what" type="radio" default="0" label="MOD_BLOG_CALENDAR_SHOWWHATLBL" description="MOD_BLOG_CALENDAR_SHOWWHATDESC">
+			<option value="0">MOD_BLOG_CALENDAR_SHOWWHAT0</option>
+			<option value="1">MOD_BLOG_CALENDAR_SHOWWHAT1</option>
+		</field>
+	</fieldset>
+	<fieldset name="MOD_BLOG_CALENDAR_PARAMS_FOR_LIST">
+		<field name="show_list_years" type="list" default="1" label="MOD_BLOG_CALENDAR_SHOWLISTYEARSLBL" description="MOD_BLOG_CALENDAR_SHOWLISTYEARSDESC">
+			<option value="0">MOD_BLOG_CALENDAR_NO</option>
+			<option value="1">MOD_BLOG_CALENDAR_YES</option>
+		</field>	
+		<field name="show_list_months" type="list" default="1" label="MOD_BLOG_CALENDAR_SHOWLISTMONTHSLBL" description="MOD_BLOG_CALENDAR_SHOWLISTMONTHSDESC">
+			<option value="0">MOD_BLOG_CALENDAR_NO</option>
+			<option value="1">MOD_BLOG_CALENDAR_YES</option>
+		</field>				
+		<field name="show_list_articles" type="list" default="1" label="MOD_BLOG_CALENDAR_SHOWLISTARTICLESLBL" description="MOD_BLOG_CALENDAR_SHOWLISTARTICLESDESC">
+			<option value="0">MOD_BLOG_CALENDAR_NO</option>
+			<option value="1">MOD_BLOG_CALENDAR_YES</option>
+		</field>
+		<field name="show_list_sublevels" type="list" default="1" label="MOD_BLOG_CALENDAR_SHOWLISTSUBLEVELSLBL" description="MOD_BLOG_CALENDAR_SHOWLISTSUBLEVELSDESC">
+			<option value="0">MOD_BLOG_CALENDAR_NO</option>
+			<option value="1">MOD_BLOG_CALENDAR_YES</option>
+		</field>
+	</fieldset>
+	<fieldset name="MOD_BLOG_CALENDAR_PARAMS_FOR_CALENDAR">
+		<field name="cal_start_date" type="calendar" default="" label="MOD_BLOG_CALENDAR_CALSTARTDATELBL" description="MOD_BLOG_CALENDAR_CALSTARTDATEDESC">
+		</field>
+		<field name="cal_start_day" type="list" default="1" label="MOD_BLOG_CALENDAR_CALSTARTDAYLBL" description="MOD_BLOG_CALENDAR_CALSTARTDAYDESC">
+			<option value="0">MOD_BLOG_CALENDAR_SUNDAY</option>
+			<option value="1">MOD_BLOG_CALENDAR_MONDAY</option>
+			<option value="2">MOD_BLOG_CALENDAR_TUESDAY</option>
+			<option value="3">MOD_BLOG_CALENDAR_WEDNESDAY</option>
+			<option value="4">MOD_BLOG_CALENDAR_THURSDAY</option>
+			<option value="5">MOD_BLOG_CALENDAR_FRIDAY</option>
+			<option value="6">MOD_BLOG_CALENDAR_SATURDAY</option>
+		</field>
+		<field name="cal_length_days" type="list" default="2" label="MOD_BLOG_CALENDAR_LENGTHDAYSLBL" description="MOD_BLOG_CALENDAR_LENGTHDAYSDESC">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</field>
+	</fieldset>
+	<fieldset name="MOD_BLOG_CALENDAR_COMMON_PARAMS">	 
+	        <field type="spacer" />
+	        <field name="use_article_date" type="radio" default="yes" label="MOD_BLOG_CALENDAR_USEARTICLEDATELBL" description="MOD_BLOG_CALENDAR_USEARTICLEDATEDESC">
+			<option value="no">MOD_BLOG_CALENDAR_NO</option>
+			<option value="yes">MOD_BLOG_CALENDAR_YES</option>
+	        </field>
+           	<field type="spacer" />
+           	<field name="associatedItemid" type="text" default="" label="MOD_BLOG_CALENDAR_ASSOCIATED_ITEMID" description="MOD_BLOG_CALENDAR_ASSOCIATED_ITEMID_DESC">
+		</field>
+		<field type="spacer"></field>
+                <field name="cbintegration" type="radio" default="0" label="MOD_BLOG_CALENDAR_CBINTEGRATION" description="MOD_BLOG_CALENDAR_CBINTEGRATIONDESC">
+			<option value="0">MOD_BLOG_CALENDAR_NO</option>
+			<option value="1">MOD_BLOG_CALENDAR_YES</option>
+                </field>
+        </fieldset>
+	<fieldset name="advanced">
+		<field name="cache" type="list" default="1" label="MOD_BLOG_CALENDAR_CACHING_LBL" description="MOD_BLOG_CALENDAR_CACHING_DESC">
+			<option value="1">MOD_BLOG_CALENDAR_GLOBALS</option>
+			<option value="0">MOD_BLOG_CALENDAR_NOCACHING</option>
+		</field>
+		<field name="cache_time" type="text" default="900" label="MOD_BLOG_CALENDAR_CACHETIME_LBL" description="MOD_BLOG_CALENDAR_CACHETIME_DESC" />
+		<field name="moduleclass_sfx" type="text" default="" label="MOD_BLOG_CALENDAR_MODULECLASSSUFFIX_LBL" description="MOD_BLOG_CALENDAR_MODULECLASSSUFFIX_DESC" />
+        </fieldset>
+       </fields>
+      </config>
+</extension>

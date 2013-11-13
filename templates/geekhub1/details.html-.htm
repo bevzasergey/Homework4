@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Деталі курсів</title>
+    <meta name="description" content="Знай своїх героїв - знайомтеся ближче з тими, хто робить GeekHub реальністю.">
+    <meta name="keywords" content="команда GeekHub, team, команда">
+	<link href="style.css" tppabs="http://geekhub.ck.ua/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.6.4.min.js" tppabs="http://geekhub.ck.ua/js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript">
+        function showIndex(index) {
+            $('.sidebar li.current').removeClass('current');
+            $('.sidebar > ul > li:eq('+index+')').addClass('current');
+
+            $('.details li.current').slideUp().removeClass('current');
+            var li = $('.details > ul > li:eq('+index+')');
+            li.addClass('current').slideDown();
+        }
+        $(function(){
+            var location = window.location.href;
+            var index = 0;
+            if(location.split('?').length > 1)
+            {
+                index = location.split('?')[1].replace("#","");
+            }
+            showIndex(index)
+
+            $('.sidebar li a').click(function(){
+               var index = $(this).parent().index();
+                showIndex(index);
+                
+                return false;
+            });
+            $('.details a.register').click(function(){
+                var index = $(this).parent().index();
+                window.location = 'register.php-.htm'/*tpa=http://geekhub.ck.ua/register.php?*/+index;
+
+                return false;
+            });
+        });
+    </script>
+	<script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-27082120-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www/') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+	</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter17027506 = new Ya.Metrika({id:17027506, enableAll: true, webvisor:true});
+        } catch(e) { }
+    });
+    
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="../mc.yandex.ru/watch/17027506.gif" tppabs="http://mc.yandex.ru/watch/17027506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body class="inner">
+<div id="wrap">
+	<div id="header">
+		<h1><a href="index.htm" tppabs="http://geekhub.ck.ua/">GeekHub</a></h1>
+        <ul class="nav">
+            <li><a href="index.htm" tppabs="http://geekhub.ck.ua/">Головна</a></li>
+            <li><a href="about.html" tppabs="http://geekhub.ck.ua/about.html">Про GeekHub</a></li>
+            <li><a href="team.html" tppabs="http://geekhub.ck.ua/team.html">Команда</a></li>
+            <li><a href="faq.html" tppabs="http://geekhub.ck.ua/faq.html">FAQ</a></li>
+            <li><a href="contacts.html" tppabs="http://geekhub.ck.ua/contacts.html">Зв’язок</a></li>
+        </ul>
+        <ul class="links">
+            <li class="fb"><a href="javascript:if(confirm('http://www.facebook.com/pages/GeekHub/158983477520070  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.facebook.com/pages/GeekHub/158983477520070'" tppabs="http://www.facebook.com/pages/GeekHub/158983477520070">facebook</a></li>
+            <li class="vk"><a href="javascript:if(confirm('http://vkontakte.ru/geekhub  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://vkontakte.ru/geekhub'" tppabs="http://vkontakte.ru/geekhub">Вконтакте</a></li>
+            <li class="tw"><a href="javascript:if(confirm('http://twitter.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://twitter.com/#!/geek_hub'" tppabs="http://twitter.com/#!/geek_hub">twitter</a></li>
+            <li class="yb"><a href="javascript:if(confirm('http://www.youtube.com/user/GeekHubchannel  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.youtube.com/user/GeekHubchannel'" tppabs="http://www.youtube.com/user/GeekHubchannel">youtube</a></li>
+        </ul>
+	</div><!-- header -->
+	<div id="content">
+        <div class="sidebar">
+            <h3>НАШІ КУРСИ</h3>
+            <ul>
+                <li><a href="#">Frontend CMS</a></li>
+                <li><a href="#">Advanced CMS</a></li>
+                <li><a href="#">Advanced PHP</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">Ruby on Rails</a></li>
+                <li><a href="#">Groovy & Grails</a></li>
+                <li><a href="#">Java for Web</a></li>
+                <li><a href="#">Project Management</a></li>
+                <li><a href="#">Quality Assurance</a></li>
+                <li><a href="#">Business English</a></li>
+            </ul>
+        </div>
+        <div class="details">
+            <ul>
+                <li>
+                    <img src="images/icon-frontend.png" tppabs="http://geekhub.ck.ua/images/icon-frontend.png" alt="frontend">
+                    <h2>Frontend CMS</h2>
+                    <p>Цей курс допоможе вам навчитися створювати веб сайти на основі системи керування контентом. Все, від скінування дизайну до підключення CMS. Цей курс дасть вам чудовий старт для фріланса або роботи в компанії.</p>
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/jack.png" tppabs="http://geekhub.ck.ua/images/jack.png" />
+                            <h3>Євген “Jack” Григор’єв</h3>
+                            <p>Працює з рядом технологій, включаючи Symfony, Drupal, jQuery, Compass CSS, HAML, etc.
+                                Майстерність Євгена стоїть за такими проектами як <a href="javascript:if(confirm('http://www.belvilla.nl/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.belvilla.nl/'" tppabs="http://www.belvilla.nl/">Belvilla</a>, <a href="javascript:if(confirm('http://yesorno.ch/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://yesorno.ch/'" tppabs="http://yesorno.ch/">Yes or No</a>, <a href="javascript:if(confirm('http://www.webshop.jongenvrij.nl/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.webshop.jongenvrij.nl/'" tppabs="http://www.webshop.jongenvrij.nl/">Jongenvrij webshop</a>, <a href="javascript:if(confirm('http://usgovernmentauctions.net/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://usgovernmentauctions.net/'" tppabs="http://usgovernmentauctions.net/">USGA</a> та багато інших. У Geekhub Євген викладає Advanced CMS.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Що таке HTML (Wikipedia)</li>
+                        <li>Що таке CSS (Wikipedia)</li>
+                        <li>Основи роботи інтернету (сервер, браузер, домен і т.п.)</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-adv-cms.png" tppabs="http://geekhub.ck.ua/images/icon-adv-cms.png" />
+                    <h2>Advanced CMS</h2>
+                    <p>Курс для тих хто хоче навчитися створювати сайти різного рівня складності за допомогою популярних CMS Joomla та Drupal. Якщо ви хочете робити вебсайти як професіонал, цей курс для вас. Особливості різних CMS, використання та написання плагінів та компонентів, інтеграція із соціальними мережами та третьосторонніми сервісами.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/sergii_gychka.png" tppabs="http://geekhub.ck.ua/images/sergii_gychka.png" />
+                            <h3>Сергій Гичка</h3>
+                            <p>Сергій працює з такими технологіями як Symfony, Drupal, JS, Zend Framework, CodeIgniter. Його проекти включають InnoLaunch Platform, <a href="javascript:if(confirm('http://www.thevx.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.thevx.com/'" tppabs="http://www.thevx.com/">The VX</a>, <a href="javascript:if(confirm('http://fundforgenderequality.unwomen.org/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://fundforgenderequality.unwomen.org/'" tppabs="http://fundforgenderequality.unwomen.org/">Fund for Gender Equality</a>, <a href="javascript:if(confirm('http://untf.unwomen.org/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://untf.unwomen.org/'" tppabs="http://untf.unwomen.org/">UN Trust Fund to End Violence Against Women</a>. У GeekHub Сергій викладає Advanced CMS.</p>
+                        </li>
+                        <li>
+                              <img src="images/yaschuk.png" tppabs="http://geekhub.ck.ua/images/yaschuk.png" />
+                              <h3>Владислав Ящук</h3>
+                              <p>Влад має значний досвід у розробці веб-сайтів на базі CMS. У GeekHub викладає Advanced CMS.</p>
+                        </li>
+
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Базові знання HTML / CSS (HTML: структура сторінки, теги, посилання, зображення, форми, талиці; CSS: селектори, наслідування, псевдокласи, ідентифікатори і класи, інтеграція css-файлів з HTML)</li>
+                        <li>Базові знання PHP (синтаксис мови, основи ООП)</li>
+                        <li>Базові знання JavaScript (синтаксис, основи работи з JQuery)</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-adv-php.png" tppabs="http://geekhub.ck.ua/images/icon-adv-php.png" />
+                    <h2>Advanced PHP</h2>
+                    <p>AdvancedPHP для тих хто хоче розвивати свої базові навички в PHP. Курс заглиблюється у вивчення ООП, MVC та паттернiв проектування на базі найпопулярнішого php фреймворку Symfony2. Курс буде корисний тим, хто вже спробував себе у написанні простих сайтів/web-додаткiв за допомогою популярних платформ, таких як Joomla, WP ect. AdvancedPHP для тих хто хоче прокачати свої знання та навички для виходу на новий рівень, де вiдсутнi обмеження платформ чи мов програмування.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/oleg_zinchenko.png" tppabs="http://geekhub.ck.ua/images/oleg_zinchenko.png" />
+                            <h3>Олег Зінченко</h3>
+                            <p>Олег професiйно займаеться розробкою веб додаткiв на PHP з використанням сучасних фреймфоркiв. Адепт Symfony2. У GeekHub Олег викладає Advanced PHP.</p>
+                        </li>
+                        <li>
+                            <img src="images/polischuk.png" tppabs="http://geekhub.ck.ua/images/polischuk.png" />
+                            <h3>Сергій Поліщук</h3>
+                            <p>Студент GeekHub у минулому, а зараз - backend девелопер в успішній продуктовій компанії США. Сергій полюбляє важкі задачі та прості рішення. У GeekHub Сергій викладає Advanced PHP. </p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Базові знання HTML / CSS (HTML: структура сторiнки, теги, посилання, зображення, форми, таблицi; CSS: селектори, наслiдування, псевдокласи, iдентифiкатори i класи, iнтеграцiя css-файлiв у HTML)</li>
+                        <li>Базові знання PHP - ситаксис, змінні, оператори та конструкції (if, for, foreach etc.)</li>
+                        <li>Базовий рівень англійської в IT (розумiння технiчної літератури і документації, вміння називати змінні англійською);</li>
+                        <li>Загальне розуміння роботи web (протоколи (http, ...), методи (POST, GET, ...), заголовки (cookies, …), коди відповідей (404, 302, ...), сервери, домени, браузери, кукі);</li>
+                        <li>Базові UNIX команди (ls, cp, mv, rm, chmod (в т.ч. опції), mkdir, ssh);</li>
+                        <li>Встановлена UNIX система на ноутбуці й вміння з нею управлятися (Ubuntu, Mac OS X і т.д.);</li>
+                        <li>Велике бажання й мотивація :)</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-js.png" tppabs="http://geekhub.ck.ua/images/icon-js.png" />
+                    <h2>JavaScript</h2>
+                    <p>Подивіться на список найбільш популярних мов - javascript в першій трійці. Це тому що все найцікавіше відбувається в браузері, а не на сервері. Javascript - це той інструмент який допоможе вам створювати дійсно зручні та швидкі веб сторінки.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/kluchnik.png" tppabs="http://geekhub.ck.ua/images/kluchnik.png" />
+                            <h3>Сергій Ключник</h3>
+                            <p>Сергій - активний учасник open source community, контріб'ютор <a href="javascript:if(confirm('https://github.com/jquery/qunit/blob/master/AUTHORS.txt  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?'))window.location='https://github.com/jquery/qunit/blob/master/AUTHORS.txt'" tppabs="https://github.com/jquery/qunit/blob/master/AUTHORS.txt">jQuery Foundation</a>, створив багато <a href="javascript:if(confirm('https://github.com/redexp?tab=repositories  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?'))window.location='https://github.com/redexp?tab=repositories'" tppabs="https://github.com/redexp?tab=repositories">проектів з відкритим кодом</a> на github. У повсякденній роботі Сергій займається як frontend, так і backend розробкою. У GeekHub Сергій викладає Javascript.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Базові знання HTML</li>
+                        <li>Базові знання ООП</li>
+                        <li>Навички програмування на скриптовій мові програмування</li>
+                        <li>Синтаксис javascript</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-ios.png" tppabs="http://geekhub.ck.ua/images/icon-ios.png" />
+                    <h2>iOS</h2>
+                    <p>Курс для швидкого старту в розробці програмного забезпечення під популярну мобільну платформу iOS. Від найпростйших принципів до повноцінного мобільного програмного забезпечення iPhone, iPod Touch, iPad.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/cmn.png" tppabs="http://geekhub.ck.ua/images/cmn.png" />
+                            <h3>Тимофій “Common” Козак</h3>
+                            <p>Тимофій розвиває індустрію мобільних додатків. На його рахунку такі проекти як KandleFly, SecondChance, Yak Messenger, <a href="javascript:if(confirm('http://presentain.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://presentain.com/'" tppabs="http://presentain.com/">Presentain</a>, <a href="javascript:if(confirm('http://www.maximsoftware.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.maximsoftware.com/'" tppabs="http://www.maximsoftware.com/">MaximSoftware</a>, <a href="javascript:if(confirm('http://mclean-design.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://mclean-design.com/'" tppabs="http://mclean-design.com/">MClean-design</a> та багато інших. В Geekhub Тимофій викладає iOS.</p>
+                        </li>
+                        <li>
+                            <img src="images/nadolinskiy.png" tppabs="http://geekhub.ck.ua/images/nadolinskiy.png" />
+                            <h3>Павло Надолинський</h3>
+                            <p>За досить невеликий час роботи, Павло встиг прийняти участь у багатьох проектах та здобути неабиякий досвід у розробці iOS додатків. У GeekHub викладає iOS.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>(Ноутбук з OS X) АБО (PC з OS X + iPhone/iPad/iPod Touch)</li>
+                        <li>Базові навички програмування. (змінні, функції, цикли, умови, типи данних, алгоритми)</li>
+                        <li>Базові знання ООП</li>
+                        <li>Базовий рівень англійської в IT (вміння розуміти технічну літературу і документацію, називати змінні англійською);</li>
+                        <li>Бажання і мотивація до крові :)</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-android.png" tppabs="http://geekhub.ck.ua/images/icon-android.png" />
+                    <h2>Android</h2>
+                    <p>Android - найпопулярніша операційна система для смартфонів. В даному курсі ми охопимо найважливіші елементи побудови додатків для даної платформи. Ознайомимося з основними компонентами UI та UX. Навчимося їх правильно використовувати. Також навчимося працювати в команді та побудуємо корисні додатки.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/dmytro_tarianyk.png" tppabs="http://geekhub.ck.ua/images/dmytro_tarianyk.png" />
+                            <h3>Дмитро Таряник</h3>
+							<p>
+								На рахунку Дмитра такі проекти як <a href="javascript:if(confirm('https://play.google.com/store/apps/details?id=com.heineken.magazineapp  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?'))window.location='https://play.google.com/store/apps/details?id=com.heineken.magazineapp'" tppabs="https://play.google.com/store/apps/details?id=com.heineken.magazineapp">Heineken Nederland Magazine</a>, <a href="javascript:if(confirm('https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?'))window.location='https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android'" tppabs="https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android">LifeChurch Android app</a>. У GeekHub викладає Java for Android.
+							</p>
+                        </li>
+                        <li>
+                            <img src="images/boss.png" tppabs="http://geekhub.ck.ua/images/boss.png" />
+                            <h3>Сергій Босовський</h3>
+                            <p>Сергій займається питаннями інтерфейсів і обробки контенту, кастомними компонентами UI та інтеграцією андроїд аппів із зовнішніми сервісами. Сергій працював над такими проектами як <a href="javascript:if(confirm('https://market.android.com/details?id=com.sandsmedia.apps.mobile.android.jtj  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?'))window.location='https://market.android.com/details?id=com.sandsmedia.apps.mobile.android.jtj'" tppabs="https://market.android.com/details?id=com.sandsmedia.apps.mobile.android.jtj">Java Tech Journal</a>, <a href="javascript:if(confirm('https://market.android.com/details?id=com.sirma.mobile.bible.android  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?'))window.location='https://market.android.com/details?id=com.sirma.mobile.bible.android'" tppabs="https://market.android.com/details?id=com.sirma.mobile.bible.android">LifeChurch Android app</a> та <a href="javascript:if(confirm('https://market.android.com/details?id=com.masterofcode.android.yakchat  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?'))window.location='https://market.android.com/details?id=com.masterofcode.android.yakchat'" tppabs="https://market.android.com/details?id=com.masterofcode.android.yakchat">Yak messenger</a>. У GeekHub Сергій викладає Java for Android.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Добре розуміння ООП</li>
+                        <li>Базові знання Java</li>
+                        <li>Мотивація та бажання розвиватись</li>
+                        <li>Базові знання роботи з Git вітаються</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-ruby.png" tppabs="http://geekhub.ck.ua/images/icon-ruby.png" />
+                    <h2>Ruby on Rails</h2>
+                    <p>Ruby on Rails (RoR) є популярним та затребуваним фреймворком для написання веб-сервісів на мові програмування Ruby. Використовуючи основні переваги Ruby (динамічна мова для об'єктно-орієнтовного програмування, що відрізняється лаконічністю і інтуітивністю) та еталонної MVC архітектури — RoR дозволяє розробляти якісні веб-сервіси швидкими темпами. Серед веб-проектiв, що написані на Ruby on Rails можна виділити — GitHub, Twitter, Basecamp, Groupon, YP, Shopify та інші.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/pasko.png" tppabs="http://geekhub.ck.ua/images/pasko.png" />
+                            <h3>Олег Пасько</h3>
+                            <p>Олег полюбляє розв'язувати бізнес-задачі в IT за допомогою RoR. На рахунку Олега такі проекти як <a href="javascript:if(confirm('http://shopius.ru/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://shopius.ru/'" tppabs="http://shopius.ru/">shopius.ru</a>, <a href="javascript:if(confirm('http://totravelme.ru/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://totravelme.ru/'" tppabs="http://totravelme.ru/">totravelme.ru</a>, <a href="javascript:if(confirm('http://clickaway.ru/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://clickaway.ru/'" tppabs="http://clickaway.ru/">clickaway.ru</a> та ряд інших цікавих проектів для різних компаній. У GeekHub Олег викладає Ruby on Rails.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Базові знання HTML / CSS (HTML: структура сторiнки, теги, посилання, зображення, форми, таблицi; CSS: селектори, наслiдування, псевдокласи, iдентифiкатори i класи, iнтеграцiя css-файлiв у HTML)</li>
+                        <li>Базовий рівень англійської в IT (розумiння технiчної літератури і документації, вміння називати змінні англійською);</li>
+                        <li>Загальне розуміння роботи web (протоколи (http, ...), методи (POST, GET, ...), заголовки (cookies, …), коди відповідей (404, 302, ...), сервери, домени, браузери, кукі);</li>
+                        <li>Базові UNIX команди (ls, cp, mv, rm, chmod (в т.ч. опції), mkdir, ssh);</li>
+                        <li>Встановлена UNIX система на ноутбуці й вміння з нею управлятися (Ubuntu, Mac OS X і т.д.);</li>
+                        <li>Велике бажання й мотивація :)</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-grails.png" tppabs="http://geekhub.ck.ua/images/icon-grails.png" />
+                    <h2>Groovy & Grails</h2>
+                    <p>Познайомтесь з одним з найпотужніших фреймворків для швидкої розробки веб-додатків. Гнучкість динамічної мови Groovy (що є надмножиною Java, що на 100% сумiсна Groovy) поєднуються з силою та рiзноманiтнiстю Java бiблiотек та фреймворкiв. Grails - це не тільки набір бібліотек, але й певна філософія розробки, що базуеться на паттернах та найкращих практиках, які стали загальноприйнятими не тільки в середовищі Java, але й в програмуванні вцілому. Спираючись на відносно низький поріг входження, ми спробуемо розглянути повний цикл розробки веб-додатку: побудова інтерфейсу, обробка внутрішньої логіки, зберігання даних.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/daniluk.png" tppabs="http://geekhub.ck.ua/images/daniluk.png" />
+                            <h3>Богдан Данилюк</h3>
+                            <p>Богдан розробник у компанії TransferWise. Прихильник швидких, динамічних та надійних рішень у розробці програмного забезпечення. Викладатиме курс улюбленої мови програмування та фреймворку - Groovy & Grails.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Базові знання HTML / CSS (HTML: структура сторiнки, теги, посилання, зображення, форми, таблицi; CSS: селектори, наслiдування, псевдокласи, iдентифiкатори i класи, iнтеграцiя css-файлiв у HTML)</li>
+                        <li>Базовий рівень англійської в IT (розумiння технiчної літератури і документації, вміння називати змінні англійською);</li>
+                        <li>Загальне розуміння роботи web (протоколи (http, ...), методи (POST, GET, ...), заголовки (cookies, …), коди відповідей (404, 302, ...), сервери, домени, браузери, кукі);</li>
+                        <li>Базові UNIX команди (ls, cp, mv, rm, chmod (в т.ч. опції), mkdir, ssh);</li>
+                        <li>Встановлена UNIX система на ноутбуці й вміння з нею управлятися (Ubuntu, Mac OS X і т.д.);</li>
+                        <li>Велике бажання й мотивація :)</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-java.png" tppabs="http://geekhub.ck.ua/images/icon-java.png" />
+                    <h2>Java for Web</h2>
+                    <p>Java -- це основа ентерпрайз технологій. Ви ознайомитесь із мовою, основними классами і пакетами, а також найбільш популярними та потужними фреймворками для розробки веб-аплікейшенів. Курс вимагає підвищеного рівня самостійної роботи, але отримані знання приносять особливу винагороду в роботі.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/jura_batora.png" tppabs="http://geekhub.ck.ua/images/jura_batora.png" />
+                            <h3>Юра Батора</h3>
+                            <p>Юра займається розробкою комерційних проектів на Java зі складною клієнт-серверною архітектурою. У GeekHub викладає Java for Web.</p>
+                        </li>
+                        <li>
+                            <img src="images/bogdan_haliapin.png" tppabs="http://geekhub.ck.ua/images/bogdan_haliapin.png" />
+                            <h3>Богдан Халяпін</h3>
+                            <p>Богдан керує компанією SPD-Ukraine та займається її розвитком. Має більше ніж 10 років досвіду з Java. У складі GeekHub Богдан є викладачем та координатором групи Java for Web.</p>
+                        </li>
+                        <li>
+                            <img src="images/valerii_oleksienko.png" tppabs="http://geekhub.ck.ua/images/valerii_oleksienko.png" />
+                            <h3>Валерій Олексієнко</h3>
+                            <p>Backend та frontend веб-розробник. Основні технології, з якими працює: Spring (MVC, Security), Hibernate, mySql, MongoDB, jQuery, Ext.js Хоббі включають сноуборд, музика, mobile development. У GeekHub Валерій викладає Java for Web.</p>
+                        </li>
+                        <li>
+                            <img src="images/bereza.png" tppabs="http://geekhub.ck.ua/images/bereza.png" />
+                            <h3>Андрій Береза</h3>
+                            <p>Андрій  - сертифікований Java 7 Programmer з великим досвідом реалізації back-end та front-end, у тому числі на проектах створення фінансових систем. У GeekHub викладає Java for Web.</p>
+                        </li>
+                        <li>
+                            <img src="images/volodymyr_bilous.png" tppabs="http://geekhub.ck.ua/images/volodymyr_bilous.png" />
+                            <h3>Володимир Білоус</h3>
+                            <p>Володимир є Java та Android розробником у SPD Ukraine. Його основний проект -- <a href="javascript:if(confirm('http://nimblecommerce.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://nimblecommerce.com/'" tppabs="http://nimblecommerce.com/">nimblecommerce.com</a> У GeekHub Володимир викладає Java for Web.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Базові знання HTML (структура сторінки, теги, посилання, форми)</li>
+                        <li>Базові знання Java (cинтаксис, ключові слова, базові типи, поняття пакет, клас, метод, змінна, модифікатори доступу, ...)</li>
+                        <li>Базові знання ООП (поняття об’єкт, клас, наслідування, інтерфейс, ...)</li>
+                        <li>Базовий рівень англійської (розуміння технічної літератури та документації, вміння називати змінні англійською, ...);</li>
+                        <li>Загальне розуміння роботи web (протоколи (http, ...), методи (POST, GET, ...), коди відповідей (200, 404, 302, ...), сервер, домен, браузер, ...;</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-pm.png" tppabs="http://geekhub.ck.ua/images/icon-pm.png" />
+                	<h2>Project Management</h2>
+                	<p>Щоб стати досвідченим менеджером проектів потрібні роки спроб та помилок. Geekhub дає вам можливість набути практичних навичок та уникнути неприємних ситуацій в реальній роботі. Ми навчимо вас розуміти бізнес, відносини із клієнтами, девелоперами та звичайно вивчемо методології ведення проектів.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/alona_lisicina.png" tppabs="http://geekhub.ck.ua/images/alona_lisicina.png" />
+                            <h3>Альона Лісіцина</h3>
+                            <p>Альона має науковий ступінь PhD та працює головним проектним менеджером у компанії Master of Code LLC. У Geekhub Альона викладає Project Management. </p>
+                        </li>
+                        <li>
+                            <img src="images/nkurat.png" tppabs="http://geekhub.ck.ua/images/nkurat.png" />
+                            <h3>Нік Курат</h3>
+                            <p>Нік займається розвитком бізнесу компанії Master of Code LLC та розвитком стартапу presentain.com . У складі Geekhub Нік викладає Project Management та працює над брендінгом та маркетингом проекту.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Основи роботи інтернету (сервер, браузер, домен і т.п.)</li>
+                        <li>Agile (маніфест)</li>
+                        <li>Scrum (основні принципи)</li>
+                        <li>Знання англійської мови (високий рівень) - обов’язково!</li>
+                        <li>Лідерські якості</li>
+                        <li>IT background</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-qa.png" tppabs="http://geekhub.ck.ua/images/icon-qa.png" />
+                    <h2>Quality Assurance</h2>
+                    <p>Курс для тих, хто вміє конструктивно критикувати та хотів би з цього навику зробити цікаву інноваційну професію. Ми допоможемо розібратися у непростій науці тестування програмного забезпечення та веб-сайтів, навчимо писати змістовні тест-плани, підкріпивши знання практичними навичками, розберемо базу автоматизованого тестування, зробивши впевнені кроки у її засвоєнні, та спробуємо виховати у студентах тягу до прекрасних продуктів з чудовим юзабіліті та безбажним змістом.
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/olena_perekopska.png" tppabs="http://geekhub.ck.ua/images/olena_perekopska.png" />
+                            <h3>Олена Перекопська</h3>
+                            <p>Олена має значний досвід у сфері контролю якості та управління проектами. У GeekHub викладає Quality Assurance.</p>
+                        </li>
+                        <li>
+                            <img src="images/korneichuk.png" tppabs="http://geekhub.ck.ua/images/korneichuk.png" />
+                            <h3>Олександра Корнійчук</h3>
+                            <p>Олександра займається розвитком бізнесу, а також керує командою тестувальників у компанії QAMadness.</p>
+                        </li>
+                    </ul>
+
+                    <h3>ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul class="questions">
+                        <li>Знання загальної термінології тестування програмного забезпечення та сайтів</li>
+                        <li>Розуміння основних принципів тестування</li>
+                        <li>Розуміння принципів роботи різних систем та програмних продуктів</li>
+                        <li>Базовий рівень англійської</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+                <li>
+                    <img src="images/icon-english.png" tppabs="http://geekhub.ck.ua/images/icon-english.png" />
+                    <h2>Business English</h2>
+                    <p>Навички спілкування у діловому середовищі. Якщо ви лідер команди або менеджер проектів, Business English допоможе вам здобути корисні інструменти для ефективних комунікацій як всередині команди так і з клієнтами.</p>
+
+                    <h3>Команда</h3>
+                    <ul class="team">
+                        <li>
+                            <img src="images/tim_phipps.png" tppabs="http://geekhub.ck.ua/images/tim_phipps.png" />
+                            <h3>Tim Phipps</h3>
+                            <p>Since gaining his CELTA teaching qualification, Tim has specialised in private English lessons, meeting a wide range of student needs. At Geekhub Tim leads the Technical English course.</p>
+                        </li>
+                    </ul>
+
+                    <h3 style="display: none" >ТЕМИ ПИТАНЬ НА ЕКЗАМЕНI</h3>
+                    <ul style="display: none" class="questions">
+                        <li>dcvd</li>
+                        <li>dfvfvdf</li>
+                        <li>fvdvdv</li>
+                    </ul>
+                    <a class="register" href="#">Зареєструватися</a>
+                </li>
+            </ul>
+        </div>
+	</div><!-- content -->
+    <ul id="footer">
+        <li>
+            <ul class="nav">
+                <li><a href="index.htm" tppabs="http://geekhub.ck.ua/">Головна</a></li>
+                <li><a href="about.html" tppabs="http://geekhub.ck.ua/about.html">Про GeekHub</a></li>
+                <li><a href="team.html" tppabs="http://geekhub.ck.ua/team.html">Команда</a></li>
+                <li><a href="contacts.html" tppabs="http://geekhub.ck.ua/contacts.html">Зв’язок</a></li>
+            </ul>
+        </li>
+        <li>© Copyright 2011</li>
+    </ul>
+</div>
+</body>
+</html>

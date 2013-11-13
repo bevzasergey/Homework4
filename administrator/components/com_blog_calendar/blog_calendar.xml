@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<extension type="component" version="1.6.0" method="upgrade">
+  <name>Blog_Calendar</name>
+  <creationDate>2012</creationDate>
+  <author>Juan Padial</author>
+  <authorEmail>joomlacalendar@ya.ru</authorEmail>
+  <authorUrl>http://joomlacalendar.ru/</authorUrl>
+  <copyright>joomlacalendar.ru</copyright>
+  <license>GNU/GPL</license>
+  <version>1.6.5a</version>
+  <description><![CDATA[<p>
+  Календарь, который отображает новости на сайте по определенным дням. 
+				</p>]]>
+  </description>
+  <installfile>install.blogcalendar.php</installfile>
+  <uninstallfile>uninstall.blogcalendar.php</uninstallfile>
+  <updateservers>
+   <server type="extension" priority="2" name="BlogCalendar Updates">/</server>
+  </updateservers>
+  <files folder="site">
+        <filename>index.html</filename>
+        <filename>blog_calendar.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>language</folder>
+    </files>
+    <administration>
+      <menu>Календарь</menu>
+         <submenu>
+		 <menu task="edit_css">Редактировать CSS</menu>
+	   </submenu>
+	   <files folder="admin">
+              <filename>index.html</filename>
+              <filename>blog_calendar.php</filename>
+              <filename>controller.php</filename>
+              <filename>calendar.gif</filename>
+              <filename>bg.gif</filename>
+              <filename>blogcalendar.gif</filename>
+              <folder>language</folder>
+       </files>
+  </administration>
+</extension>

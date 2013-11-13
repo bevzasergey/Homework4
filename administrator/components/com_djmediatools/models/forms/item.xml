@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+		
+		<field name="catid"
+			type="djalbum"
+			label="COM_DJMEDIATOOLS_CATEGORY"
+			class="inputbox"
+			default=""
+			required="true"
+			disable_default="true"
+		/>
+		
+		<field name="category_info" type="djspacer" class="djinfo" label="COM_DJMEDIATOOLS_CATEGORY_DESC" />
+		
+		<field name="title"
+			type="text"
+			label="JGLOBAL_TITLE"
+			description="JGLOBAL_TITLE"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		 
+		 <field name="alias"
+			type="hidden"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			class="inputbox"
+			size="30"
+		/>
+		
+		<field name="image"
+			type="media"
+			hide_none="1"
+			label="COM_DJMEDIATOOLS_IMAGE"
+			description="COM_DJMEDIATOOLS_IMAGE"
+			required="true"
+		/>
+		
+		<field name="description" type="editor"
+			label="COM_DJMEDIATOOLS_DESCRIPTION"
+			description="COM_DJMEDIATOOLS_DESCRIPTION_DESC"
+			class="inputbox"
+			filter="safehtml"
+			buttons="false"
+		/>
+		
+		<field id="published"
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>			
+		</field>
+		
+		<field name="publish_up" type="calendar"
+			label="COM_DJMEDIATOOLS_PUBLISH_UP" description="COM_DJMEDIATOOLS_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+
+		<field name="publish_down" type="calendar"
+			label="COM_DJMEDIATOOLS_PUBLISH_DOWN" description="COM_DJMEDIATOOLS_PUBLISH_DOWN_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc" />
+		
+		<field name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+			
+	</fieldset>
+	
+	<fields name="params" addfieldpath="/administrator/components/com_djmediatools/models/fields">
+		<fieldset name="jbasic"	label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+			addfieldpath="/administrator/components/com_content/models/fields" >
+		
+			<field name="link_type"	type="djoptiongroups" default="" label="COM_DJMEDIATOOLS_LINK_TYPE" description="COM_DJMEDIATOOLS_LINK_TYPE_DESC">
+				<group value="" label="COM_DJMEDIATOOLS_DO_NOT_LINK" />
+				<group value="menu" label="COM_DJMEDIATOOLS_MENU">
+						<field name="link_menu" type="menuitem" label="COM_DJMEDIATOOLS_MENU" description="COM_DJMEDIATOOLS_MENU" disable="separator" />
+				</group>
+				<group value="url" label="COM_DJMEDIATOOLS_URL">
+					<field name="link_url" type="text" label="COM_DJMEDIATOOLS_URL" description="COM_DJMEDIATOOLS_URL" class="inputbox" size="30" />
+				</group>
+				<group value="article" label="COM_DJMEDIATOOLS_ARTICLE">
+					<field name="link_article" type="modal_article" label="COM_DJMEDIATOOLS_ARTICLE" description="COM_DJMEDIATOOLS_ARTICLE" />
+				</group>
+				<group value="video" label="COM_DJMEDIATOOLS_VIDEO_IN_MODAL">
+					<field name="video_link" type="text" label="COM_DJMEDIATOOLS_VIDEO_LINK" class="inputbox" size="30" />
+					<field name="video_info" type="djspacer" class="djinfo" label="COM_DJMEDIATOOLS_VIDEO_LINK_DESC" />
+				</group>
+				
+			</field>
+			
+		</fieldset>	
+	</fields>
+</form>

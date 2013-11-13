@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+
+		<name>mod_homework4</name> 
+ 		
+		<creationDate>November 2013</creationDate>
+		<author>Bevza_Sergey</author>
+		<authorEmail>bevza_s@ukr.net</authorEmail>
+		
+		
+        <version>0.0.1</version>
+        
+        <description>MOD_HOMEWORK4_XML_DESCRIPTION</description>
+ 
+		
+        <files>
+                <filename module="mod_homework4">mod_homework4.php</filename>
+                <filename>mod_homework4.xml</filename>
+				<filename>index.html</filename>				
+				<filename>helper.php</filename>
+				<folder>tmpl</folder>
+        </files>
+		<config>
+			<fields name="params">
+				
+				<fieldset name="basic">
+					<field name="text" type="text"
+						label="MOD_HOMEWORK4_TEXT_FIELD_LABEL"
+						description="MOD_HOMEWORK4_TEXT_FIELD_DESC" />	
+				</fieldset>
+				
+				<fieldset name="advanced">
+					<field name="layout" type="modulelayout"
+						label="JFIELD_ALT_LAYOUT_LABEL"
+						description="JFIELD_ALT_MODULE_LAYOUT_DESC" />				
+				</fieldset>
+			</fields>
+		</config>
+		
+</extension>

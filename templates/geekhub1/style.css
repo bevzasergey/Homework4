@@ -1,0 +1,1092 @@
+
+html,body                       { width:100%; height:100%; }
+body                            { padding:0 0 10px; margin:0; font-size:12px; font-family:Arial, sans-serif; color:#4c7689; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:15px; color:#4c7689; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { color: #E11D5D; text-decoration:none; }
+a:hover                        { text-decoration:none; }
+
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+
+
+
+
+body {
+    background:url("images/header_bg.png") repeat-x top center #fff;
+}
+body.inner {
+    background:url("images/header_bg.png") repeat-x center -342px  #fff;
+}
+
+body span.line
+{
+    display:block;
+    width:100%;
+    height:0px;
+    overflow:hidden;
+    clear:both;
+    border-top:1px solid #8ea8b3;
+}
+#wrap {
+    width:901px;
+    overflow:visible;
+    margin:0 auto;
+    padding:0 0 80px;
+}
+
+.countdown {
+    width: 350px !important;
+    height: 52px !important;
+    min-height: 52px !important;
+    margin:
+}
+
+#header {
+	position:relative;
+    overflow:hidden;
+    height:450px;
+}
+.inner #header {
+    height:108px;
+}
+
+#header h1 {
+	position:absolute; top:19px; left:0px;
+	width:167px;
+	height:71px;
+	background:url("images/geekhub_logo.png") no-repeat;
+}
+#header h1 a {
+	display:block;
+    width:167px;
+    height:71px;
+	text-indent:-2000px;
+}
+#header .line {
+    padding: 35px 0 0;
+}
+
+#header > a {
+	overflow: hidden;
+    display:block;
+    position: relative;
+    width:310px;
+    height:56px;
+    margin: 0 auto 64px;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    color:#fff;
+    text-align:center;
+    font-size:28px;
+    background:url("images/register-button.png") no-repeat;
+    text-indent: 400px;
+	z-index:2;
+}
+#header > a:hover {
+    background-position: 0 -56px;
+}
+#header > a:active {
+    background-position: 0 -112px;
+}
+#header > img {
+    position:absolute;
+	top:165px;
+	left:315px;
+    z-index:1;
+	display:block;
+}
+#header p.registration{
+    position:relative;
+   	z-index:2;
+    padding: 73px 0 18px;
+	font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:36px;
+	color:#246685;
+	text-align:center;
+}
+#header p.note {
+    position:relative;
+   	z-index:2;
+    padding: 0 0 12px;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:18px;
+	color:#246685;
+	text-align:center;
+}
+#header h4.registration a:hover {
+    text-decoration: underline;
+}
+
+.inner #header .nav {
+    height:108px;
+    margin:0;
+}
+.inner #header .nav li a {
+    padding: 48px 0 44px;
+}
+.inner #header .nav li.active a  {
+    min-width: 46px;
+    text-align: center;
+    background:url("images/inner_active.png") center bottom no-repeat;
+}
+#header .nav {
+	overflow:visible;
+    float:right;
+    width:471px;
+    height:42px;
+	margin:34px 0 31px;
+}
+#header .nav li {
+	float:left;
+	padding: 0 0 0 26px;
+}
+#header .nav li a {
+	display:block;
+    height:16px;
+	padding:14px 0 10px;
+	font-weight:bold;
+    font-family: "Trebuchet MS";
+    font-size:14px;
+    color:#396375;
+    text-transform:uppercase;
+}
+#header .nav li a.active,#header .nav li.active a,#header .nav li a:hover {
+    color:#e21d5d;
+}
+#header .links {
+	overflow:hidden;
+    float:right;
+    height:42px;
+	margin:35px -8px 0 0;
+}
+#header .links li {
+	float:left;
+    width:24px;
+    height:42px;
+	padding: 0 4px;
+}
+#header .links li a {
+	display:block;
+    width:24px;
+    height:42px;
+    color:#396375;
+    text-indent:-400px;
+    background:url("images/icons_social.png") no-repeat;
+}
+#header .links li.fb a {
+    background-position:0 10px;
+}
+#header .links li.vk a {
+    background-position:-32px 10px;
+}
+#header .links li.tw a {
+    background-position:-64px 10px;
+}
+#header .links li.yb a {
+    background-position:-96px 10px;
+}
+#header .links li.v a {
+    background-position:-128px 10px;
+}
+
+#header .links li a.active,#header .links li.active a,#header .links li a:hover {
+    background-image:url("images/icons_social_hover.png");
+}
+
+
+
+
+#header #features {
+    clear:both;
+    float:left;
+    position: relative;
+    overflow: hidden;
+    padding:8px 0 0;
+    width:450px;
+    height:236px;
+}
+#header #features .content {
+    position: absolute; 
+    height:170px;
+    left: 0;
+    top: 0;
+    padding:32px 0 0;
+}
+
+#header #features .content li  {
+    float: left;
+    overflow: hidden;
+    width:450px;
+}
+#header #features .content li p {
+    font-size:18px;
+    line-height:22px;
+    padding:20px 0 0 65px;
+}
+
+#header #features h4,#header #features h4 a {
+    font-family: "Trebuchet MS";
+    color:#4c7689;
+    font-size:42px;
+    font-weight:normal;
+}
+#header #features h4 {
+    line-height:42px;
+}
+
+
+#header .media_slider_wrapper
+{
+    position:relative; z-index:3;
+    float:left;
+    width:372px;
+    height:221px;
+    padding:13px 13px 66px;
+    margin:42px 0 0 53px;
+    background:url("images/header_video_bg.png") no-repeat;
+}
+#header #media_slider {
+    position: relative;
+    overflow: hidden;
+    width:372px;
+    height:221px;
+}
+#header #media_slider .content {
+    position: absolute; 
+    height:221px;
+    left: 0;
+    top:0;
+}
+
+#header #media_slider .content li  {
+    float: left;
+    overflow: hidden;
+    width:372px;
+    height:221px;
+}
+
+#header #features-paginate {
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    right: 465px;
+    bottom: 52px;
+}
+#header #features-paginate .buttons {
+    overflow:hidden;
+    float:right;
+}
+#header #features-paginate .buttons li {
+    float:left;
+    padding:0 3px;
+}
+
+#content {
+    overflow:hidden;
+    padding:28px 0 40px;
+}
+#content > div {
+    overflow:hidden;
+}
+
+#wrap #footer {
+    overflow:hidden;
+    padding:17px 0 0;
+    border-top:1px solid #a7c3cf;
+}
+#wrap #footer li {
+    width:50%;
+    float:left;
+    text-align:right;
+    font-size:10px;
+    color:#a7c3cf;
+    font-family:arial;
+}
+#wrap #footer li ul {
+    overflow:hidden;
+}
+#wrap #footer li ul li {
+    width:auto;
+    padding:0 21px 0 0;
+}
+#wrap #footer li ul li a {
+	display:block;
+    height:12px;
+    font-size:10px;
+	font-weight:bold;
+    font-family: "Trebuchet MS";
+    color:#396375;
+    text-transform:uppercase;
+}
+
+#content .home h2 {
+    text-align:center;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:14px;
+    line-height:18px;
+    color: #4C7687;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    padding:0 0 8px;
+	position:relative;
+	z-index:2;
+}
+#content .home .description {
+    padding:5px 64px 27px;
+    line-height:24px;
+    font-size:14px;
+	position:relative;
+	z-index:2;
+}
+#content .home .description a {
+    color:#E11D5D;
+}
+#content .home .description a:hover {
+    text-decoration:underline;
+}
+#content .home ul.types {
+    overflow:hidden;
+    margin-bottom:35px;
+}
+#content .home ul.types li {
+    float:left;
+    width:295px;
+    padding: 24px 5px 24px 0;
+    border-top: 1px solid #D2DCE1;
+}
+#content .home ul.types li.left-col{
+    clear: both;
+}
+#content .home ul.types li img {
+    display:block;
+    float:left;
+    margin:0 15px 0 0;
+}
+#content .home ul.types li h3 {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:27px;
+    line-height:27px;
+    color: #EA2778;
+}
+#content .home ul.types li p {
+    overflow:hidden;
+    margin:13px 10px 0 0;
+    font-size: 13px;
+    line-height:18px;
+    color: #39525A;
+}
+#content .home ul.types li a.title {
+    text-decoration: none !important;
+    color: #EA2778;
+}
+#content .home ul.types li a {
+    display: block;
+    padding: 10px 0 0 115px;
+    text-decoration: underline;
+    color: #EA2678;
+}
+#content .home ul.types li a:hover {
+    text-decoration: none;
+}
+#content .home ul.social_share {
+    overflow:hidden;
+}
+#content .home ul.social_share > li {
+    float:left;
+    width:276px;
+}
+#content .home ul.social_share > li h4 {
+    text-align:center;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:14px;
+    line-height:14px;
+    text-transform:uppercase;
+    letter-spacing:6px;
+    padding:0 0 8px;
+    margin: 0 0 22px;
+    border-bottom:1px solid #a7c3cf;
+}
+#content .home ul.social_share li.vk {
+    margin:0 36px;
+}
+#content .home ul.social_share li ul {
+    overflow:hidden;
+}
+#content .home ul.social_share li ul li {
+    float:left;
+    padding:0 12px 14px;
+}
+#content .home ul.social_share li ul li a {
+    display:block;
+    text-indent:-200px;
+    overflow:hidden;
+    background:url("images/sponsors.png") no-repeat;
+}
+
+#content .home ul.social_share > li.sertificates_list h4 {
+	border:none;
+width:276px;
+height:214px;
+background:url("images/banner.png") no-repeat;
+}
+
+#content .home ul.social_share > li.sertificates_list {
+overflow:hidden;
+margin:0 35px;
+}
+
+#content .home ul.social_share > li.sertificates_list h4 a {
+display:block;
+width:276px;
+height:214px;
+text-indent:-999em;
+}
+
+#content .home ul.social_share li ul li.left {
+    margin:0 0 0 60px;
+}
+
+#content .home ul.social_share li ul li.de a:hover {
+    background-position: 0 0;
+}
+
+#content .home ul.social_share li ul li.de a {
+    width:70px;
+    height:54px;
+    background-position: 0 -76px;
+}
+
+#content .home ul.social_share li ul li.moc a:hover {
+    background-position: -101px 0px;
+}
+
+#content .home ul.social_share li ul li.moc a {
+    width:72px;
+    height:46px;
+    background-position: -101px -76px;
+}
+
+#content .home ul.social_share li ul li.sergium a:hover {
+    background-position: -209px 0px;
+}
+
+#content .home ul.social_share li ul li.sergium a {
+    width:45px;
+    height:48px;
+    background-position: -209px -76px;
+}
+
+#content .home ul.social_share li ul li.stuff a:hover {
+    background-position: -283px 0px;
+}
+
+#content .home ul.social_share li ul li.stuff a {
+    width:59px;
+    height:49px;
+    background-position: -283px -76px;
+}
+
+#content .home ul.social_share li ul li.youthog a:hover {
+    background-position: -385px 0;
+}
+
+#content .home ul.social_share li ul li.youthog a {
+    width:61px;
+    height:44px;
+    background-position: -385px -76px;
+}
+
+#content .team a {
+    color:#E11D5D;
+}
+#content .team a:hover {
+    text-decoration:underline;
+}
+#content .team h2 {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:50px;
+    line-height:50px;
+    padding:0 0 8px;
+    margin: 0 0 27px;
+    border-bottom:1px solid #a7c3cf;
+}
+
+#content .team ul {
+    overflow:hidden;
+    padding:0 40px;
+}
+#content .team ul li {
+    overflow:hidden;
+    height:170px;
+    padding:0 0 15px;
+}
+#content .team ul li h3 {
+    float:right;
+    width:185px;
+    padding: 37px 0 7px;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:25px;
+    line-height:29px;
+    color:#ea2778;
+
+}
+#content .team ul li h3 span {
+    display:block;
+    font-family: arial;
+    font-weight:normal;
+    font-size:12px;
+    line-height:16px;
+    padding-top:5px;
+    color:#f3753e
+}
+#content .team ul li img {
+    float:right;
+    display:block;
+    margin:0 21px;
+}
+#content .team ul li p {
+    /*float:left;*/
+    overflow:hidden;
+    padding:40px 0 0;
+    text-align:right;
+    font-size:14px;
+    line-height:20px;
+}
+
+#content .team ul li.odd {
+    text-align:right;
+}
+#content .team ul li.odd h3 {
+    float:left;
+
+}
+#content .team ul li.odd h3 span {
+    display:block;
+}
+#content .team ul li.odd img {
+    float:left;
+    display:block;
+}
+#content .team ul li.odd p {
+    /*float:left;*/
+    overflow:hidden;
+    text-align:left;
+}
+
+
+
+#content .contacts h2 {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:50px;
+    line-height:50px;
+    padding:0 0 8px;
+    margin: 0 0 24px;
+    border-bottom:1px solid #a7c3cf;
+}
+#content .contacts > img {
+    float:left;
+    margin: 0 0 0 40px;
+}
+
+#content .contacts dl {
+    overflow:hidden;
+    text-align:center;
+    padding:0 35px;
+}
+
+#content .contacts dl dt.map {
+    width:381px;
+}
+
+#content .contacts dl dd.map {
+    height:300px;
+    float:left;
+    padding:17px 17px 17px 16px;
+    background:url("images/map.png") no-repeat;
+}
+
+#content .contacts dl dt {
+
+}
+#content .contacts dl dd {
+    padding:0 0 30px;
+}
+
+#content .contacts dl h3 {
+    text-align:center;
+    padding:0px 0 12px;
+    font-size:27px;
+    font-weight:normal;
+    color:#eb3580;
+}
+#content .contacts dl ul {
+    overflow:hidden;
+    padding:0 0 0 116px;
+}
+#content .contacts dl ul li {
+    float:left;
+    padding:0 17px 0 0;
+}
+#content .contacts dl ul li a {
+    width:49px;
+    height:49px;
+
+    display:block;
+    text-indent:-200px;
+    overflow:hidden;
+    background:url("images/contact_links.png") no-repeat;
+}
+
+#content .contacts dl ul li.fb a {
+    background-position: 0 0;
+}
+#content .contacts dl ul li.fb a:hover {
+    background-position: 0 -57px;
+}
+#content .contacts dl ul li.vk a {
+    background-position: -65px 0;
+}
+#content .contacts dl ul li.vk a:hover {
+    background-position: -65px -57px;
+}
+#content .contacts dl ul li.tw a {
+    background-position: -132px 0;
+}
+#content .contacts dl ul li.tw a:hover {
+    background-position: -132px -57px;
+}
+
+
+#content .about {
+    font-family: Arial;
+    font-size:14px;
+    line-height:20px;}
+
+#content .about h2 {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:50px;
+    line-height:50px;
+    padding:0 0 8px;
+    margin: 0 0 27px;
+    border-bottom:1px solid #a7c3cf;
+}
+
+#content .about h3 {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:29px;
+    line-height:29px;
+    margin: 0 0 10px;
+    color:#ea2778;
+}
+#content .about a {
+    color:#E11D5D;
+    font-weight:bold;
+}
+#content .about a:hover {
+    text-decoration:underline;
+}
+#content .about p {
+    font-weight:normal;
+    margin: 0 0 10px;
+    color:#4c7689;
+}
+#content .about > ul {
+    overflow:hidden;
+    padding:0 35px;
+}
+#content .about > ul .imgs {
+    float:left;
+    width:274px;
+    height:1000px;
+    margin:0 28px 0 0;
+}
+#content .about > ul .imgs img {
+    padding:0 0 20px;
+}
+#content .about > ul li {
+    overflow:hidden;
+}
+
+#content .about  ol {
+    overflow:hidden;
+    padding:10px 0 10px 40px;
+}
+#content .about ol li {
+    padding:0 0 10px;
+}
+
+
+#content .register h2 {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:50px;
+    line-height:50px;
+    padding:0 0 8px;
+    margin: 0 0 27px;
+    border-bottom:1px solid #a7c3cf;
+}
+
+#content .register h3 {
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:29px;
+    line-height:29px;
+    margin: 0 0 10px;
+    color:#ea2778;
+}
+.register p {
+	font-size:15px;
+	margin:0 0 25px 0;
+}
+.register .register-wrap {
+	overflow:hidden;
+	padding:0 40px;
+    min-height: 300px;
+}
+.register ol.register-info-list {
+	overflow:hidden;
+	margin:0 0 25px 0;
+}
+.register ol.register-info-list li {
+	overflow:hidden;
+	margin:0 0 10px 0;
+	font-size:15px;
+	color:#F2753D;
+}
+.register ol.register-info-list li span {
+	float:left;
+	font-size:19px;
+	font-weight:bold;
+	color:#E92777;
+	margin:0 5px 0 0;
+}
+.register ol.register-info-list li p {
+	overflow:hidden;
+	margin:0;
+	padding:4px 0 0;
+}
+
+
+
+.register fieldset.registration-wrap {
+	overflow:hidden;
+	padding:20px 0;
+}
+
+.register fieldset.registration-wrap *[placeholder]::-webkit-input-placeholder {
+    font-style:italic;
+    color:#A7C3CF;
+}
+.register fieldset.registration-wrap *[placeholder]:-moz-placeholder {
+    font-style:italic;
+    color:#A7C3CF;
+}
+.register fieldset.registration-wrap *[placeholder]:-ms-input-placeholder {
+    font-style:italic;
+    color:#A7C3CF;
+}
+.register fieldset.registration-wrap ul.registration-form {
+	overflow:hidden;
+	padding:0 0 0 100px;
+}
+.register fieldset.registration-wrap ul.registration-form li {
+	overflow:hidden;
+	margin:0 0 10px 0;
+}
+.register fieldset.registration-wrap ul.registration-form li.checkbox {
+	padding:5px 0 5px 160px;
+}
+.register fieldset.registration-wrap ul.registration-form li.captcha input[type="text"] {
+	width:142px;
+	margin:0 20px 0 0;
+}
+.register fieldset.registration-wrap ul.registration-form li.captcha img.digits {
+	float:left;
+	margin:2px 20px 0 0;
+}
+.register fieldset.registration-wrap ul.registration-form li.captcha img {
+    float:left;
+	margin:10px 20px 0 0;
+}
+.register fieldset.registration-wrap ul.registration-form li.checkbox label {
+	padding:0;
+	text-align:left;
+	width:332px;
+    font-weight:normal;
+}
+.register fieldset.registration-wrap ul.registration-form li.checkbox input[type="checkbox"] {
+	float:left;
+	margin:2px 10px 0 0;
+	vertical-align:top;
+}
+.register fieldset.registration-wrap ul.registration-form li.buttons {
+	padding:30px 0 0 160px;
+}
+.register fieldset.registration-wrap ul.registration-form li input[type="submit"] {
+	width:217px;
+	height:46px;
+	border:none;
+	background:url("images/register_submit.png") left top no-repeat;
+	font-size:27px;
+	color:#fff;
+}
+.register fieldset.registration-wrap ul.registration-form li label {
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	width:140px;
+	margin:0 20px 0 0;
+	padding:10px 0 0;
+	text-align:right;
+}
+.register fieldset.registration-wrap ul.registration-form li input[type="text"] {
+	float:left;
+	margin:0 20px 0 0;
+	background:#E8F0F2;
+	padding:10px;
+	width:320px;
+	border:none;
+	border-top:1px solid #92ACB7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.register fieldset.registration-wrap ul.registration-form li.phone i,.register fieldset.registration-wrap ul.registration-form li.phone b {
+    float:left;
+    display:block;
+    padding:13px 0 0;
+    margin:0 12px 0 0;
+    text-align:center;
+    font-size:14px;
+    line-height:14px;
+    font-style:normal;
+    font-family:Arial;
+}
+.register fieldset.registration-wrap ul.registration-form li.phone i
+{
+    width:34px;
+}
+.register fieldset.registration-wrap ul.registration-form li.phone b {
+    width:3px;
+}
+.register fieldset.registration-wrap ul.registration-form li.phone input[type="text"] {
+	float:left;
+	width:34px;
+    margin:0 10px 0 0;
+    text-align:center;
+}
+.register fieldset.registration-wrap ul.registration-form li.phone input[type="text"].extended {
+    width:51px;
+}
+.register fieldset.registration-wrap ul.registration-form li.phone input[type="text"].last {
+    margin:0 20px 0 0;
+}
+
+.register fieldset.registration-wrap ul.registration-form li select,.register fieldset.registration-wrap ul.registration-form li option {
+    float:left;
+    width:340px;
+    height:20px;
+    margin:10px 20px 0 0;
+    font-size:12px;
+    line-height:12px;
+    font-style:normal;
+    font-family:Arial;
+}
+
+.register fieldset.registration-wrap ul.registration-form li textarea {
+	float:left;
+	margin:0 20px 0 0;
+	background:#E8F0F2;
+	padding:10px;
+	width:320px;
+	height:100px;
+	overflow:auto;
+	border:none;
+    font-size:15px;
+    font-style:normal;
+    font-family:Arial;
+
+	border-top:1px solid #92ACB7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.register fieldset.registration-wrap ul.registration-form li .error {
+	display:block;
+	overflow:hidden;
+	padding:10px 0 0;
+	font-size:13px;
+	color:#EB3581;
+}
+
+
+#content .sidebar {
+    width: 200px;
+    padding: 0 40px 0 0;
+    float: left;
+}
+#content .sidebar h3 {
+    text-align:center;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:14px;
+    line-height:18px;
+    color: #4C7687;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    padding:0 0 8px;
+	position:relative;
+	z-index:2;
+    border-bottom: 1px solid #D2DCE1;
+}
+#content .sidebar ul li {
+    border-bottom: 1px dotted #D2DCE1;
+}
+#content .sidebar ul li a {
+    display: block;
+    padding: 7px 0 7px 8px;
+}
+#content .sidebar ul li a:hover,#content .sidebar ul li.current a {
+    color: #3191B8;
+    cursor: pointer;
+}
+
+#content .details > ul > li {
+    display: none;
+}
+
+#content .details {
+    overflow: hidden;
+}
+#content .details h2 {
+    padding: 0 0 18px;
+    color:#EA2778;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:24px;
+}
+#content .details > ul > li > img {
+    float: right;
+    display: block;
+    padding: 0 0 20px 20px;
+}
+#content .details p {
+    overflow: hidden;
+    margin:0 0 13px;
+    font-size: 13px;
+    line-height:18px;
+    color: #4C7687;
+}
+#content .details > ul > li  > h3 {
+    clear: both;
+    text-align:center;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:14px;
+    line-height:18px;
+    color: #4C7687;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    padding:0 0 8px;
+	position:relative;
+	z-index:2;
+    border-bottom: 1px solid #D2DCE1;
+}
+
+#content .details .team {
+    overflow:hidden;
+    padding: 25px 0 0;
+}
+#content .details .team li {
+    overflow:hidden;
+    padding:0 0 25px;
+}
+
+#content .details .team li img {
+    display:block;
+    float:left;
+    margin:0 24px 0 0;
+}
+
+#content .details .team li h3 {
+    padding: 24px 0 4px;
+    font-family: "Trebuchet MS";
+    font-weight:normal;
+    font-size:20px;
+    line-height:29px;
+    color:#EA2678;
+
+}
+#content .details .team li p {
+    overflow:hidden;
+    text-align:left;
+    font-size: 13px;
+    line-height:18px;
+    color: #4C7687;
+}
+
+
+#content .details .questions {
+    overflow:hidden;
+    padding: 25px 0 0;
+}
+#content .details .questions li {
+    overflow:hidden;
+    padding:0 0 20px 30px;
+    background: url("images/question-li.png") no-repeat left top;
+}
+
+#content .details .register {
+	overflow: hidden;
+    display:block;
+    position: relative;
+    width:310px;
+    height:56px;
+    margin: 20px auto 50px;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    color:#fff;
+    text-align:center;
+    font-size:28px;
+    background:url("images/register-button.png") no-repeat;
+    text-indent: 400px;
+	z-index:2;
+}
+#content .details .register:hover {
+    background-position: 0 -56px;
+}
+#content .details .register:active {
+    background-position: 0 -112px;
+}
